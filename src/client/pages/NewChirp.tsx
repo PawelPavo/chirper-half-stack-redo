@@ -48,7 +48,6 @@ class NewChirp extends React.Component<NewChirpProps, NewChirpState> {
                         />
                         <div className="col card-footer d-flex justify-content-end mt-5 mb-5 shadow">
                         <button className="btn btn-outline-success btn-lg" onClick={(e) => this.handleClick(e)}> <FaPaperPlane/> Post Chirp</button>
-
                         </div>
                     </div>
                 </div>

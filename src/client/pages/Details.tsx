@@ -31,7 +31,7 @@ class Details extends React.Component<DetailsProps, DetailsState> {
         await fetch(`/api/chirps/${this.props.match.params.id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ user: this.state.user, text: this.state.text })
+            body: JSON.stringify({ user: `${this.state.user} - edited`, text: this.state.text })
         })
         this.props.history.push('/');
     }
